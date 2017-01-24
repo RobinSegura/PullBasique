@@ -1,0 +1,8 @@
+interface Connexion{
+	 typedef sequence<string> strings;
+	 strings getClients();
+	 void sendMessages(in string from, in string to,in string message);
+	 strings getMessages(in string message);
+	 void connect(in string pseudo);
+	 void disconnect(in string pseudo);
+};
